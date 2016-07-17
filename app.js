@@ -8,7 +8,9 @@ const app = express();
 
 app.use('/css', express.static('public/css'));
 app.use('/js', express.static('public/js'));
-app.use('/images', express.static('public/images'));
+app.use('/img', express.static('public/img'));
+app.use('/bootstrap', express.static('node_modules/bootstrap/dist'));
+app.use('/jquery', express.static('node_modules/jquery/dist'));
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -22,6 +24,14 @@ app.get('/', function (req, res) {
         res.render('home', infos);
     });
 });
+
+app.get('/about', function (req, res) {
+    res.render('about');
+});
+
+app.get('/cv.pdf', function (req, res) {
+    res.sendFile(__dirname + '/public/cv.pdf');
+})
 
 app.listen(3000, function () {
     console.log('express-handlebars example server listening on: 3000');
