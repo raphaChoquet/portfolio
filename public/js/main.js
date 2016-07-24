@@ -1,6 +1,7 @@
 /* global $ */
 
 $(function () {
+    Grid.init();
     var delay = 0.6;
     var speed = 1;
     var total = $('.o-anim-fall-1').length;
@@ -21,11 +22,6 @@ $(function () {
         });
         delay += 0.01;
     });
-    $('.card').click(function (e) {
-        e.preventDefault();
-        var id = $(this).attr('href');
-        $(id).modal();
-    });
 
     $(window).scroll(function () {
         $('.card--hidden').each(function (index) {
@@ -33,7 +29,11 @@ $(function () {
             if (pos > ($(window).scrollTop() + $(window).height())) {
                 return false;
             }
+            var $parent = $(this).parent();
             $(this).removeClass('card--hidden');
+            setTimeout(function () {
+                $parent.removeClass('u-transform3d');
+            }, 500);
         });
         var posY = -300 * ($('.banner').offset().top - $(window).scrollTop() / $('.banner').height());
         $('.banner-img').css('background-position-y',  posY);

@@ -3,58 +3,63 @@
     "projects": [
         {
             "title": "Lacoste Corporate",
+            "duration": "mars 2016",
             "image": "lacoste-corporate.jpg",
             "thumbnail": "lacoste-corporate-thumb.jpg",
-            "description": "Intégration des rubriques corporates pour le sites Lacoste.com. Durant 1 mois, j'ai travaillé a partir de maquette sur l'intégration des 5 rubriques.",
-            "techno": "HTML, CSS, JS",
-            "techno-desc": "HTML, CSS, JS, jQuery",
-            "links": "<a href=\"http://www.lacoste.com/fr/corporate-group.html\">Le groupe Lacoste</a> / <a href=\"http://www.lacoste.com/fr/corporate-people.html\">People</a> / <a href=\"http://www.lacoste.com/fr/corporate-products.html\">Produits</a> / <a href=\"http://www.lacoste.com/fr/corporate-planet.html\">Planète</a> / <a href=\"http://www.lacoste.com/fr/corporate-foundation.html\">La fondation Lacoste</a>"
+            "description": "Intégration des 5 rubriques corporates pour le sites Lacoste.com à partir de maquette. Mise en place d'animation en CSS et en Javascript.",
+            "techno": "HTML, CSS, jQuery",
+            "link": "http://lacoste.com/corporate.html",
+            "textLink": "Découvrir corporate"
         },
         {
-            "title": "Lacoste Corporate",
+            "title": "Store Locator",
+            "duration": "Octobre 2012 à février 2013",
             "image": "lacoste-corporate.jpg",
             "thumbnail": "lacoste-corporate-thumb.jpg",
-            "description": "Intégration des rubriques corporates pour le sites Lacoste.com. Durant 1 mois, j'ai travaillé a partir de maquette sur l'intégration des 5 rubriques.",
-            "techno": "HTML, CSS, JS",
-            "techno-desc": "HTML, CSS, JS, jQuery",
-            "links": "<a href=\"http://www.lacoste.com/fr/corporate-group.html\">Le groupe Lacoste</a> / <a href=\"http://www.lacoste.com/fr/corporate-people.html\">People</a> / <a href=\"http://www.lacoste.com/fr/corporate-products.html\">Produits</a> / <a href=\"http://www.lacoste.com/fr/corporate-planet.html\">Planète</a> / <a href=\"http://www.lacoste.com/fr/corporate-foundation.html\">La fondation Lacoste</a>"
+            "description": "Refont de l'ancien Store Locator codé en Flash vers une version HTML.<br><strong>Backoffice :</strong> Mise en place d'une administration. Création de gestion utilisateur. Création de gestion de Boutique avec formulaire de détéction automatique des coordonnées via l'adresse. Mise en place de filtre pour rechercher les boutiques. Mise en place d'un export vers un fichier excel.<br> <strong>Frontoffice :</strong> Mise en place de formulaire de recherche de boutique via la ville, une adresse entrée ou la geolocalisation. Mise en place d'une page de résultat avec un carte google maps.",
+            "techno": "PHP, MySQL, HTML, CSS, jQuery, Google Maps",
+            "link": "http://stores.lacoste.com",
+            "textLink": "Découvrir le store locator"
         },
         {
-            "title": "Lacoste Corporate",
+            "title": "Club Lacoste",
+            "duration": "1 jour - avril 2016",
             "image": "lacoste-corporate.jpg",
             "thumbnail": "lacoste-corporate-thumb.jpg",
-            "description": "Intégration des rubriques corporates pour le sites Lacoste.com. Durant 1 mois, j'ai travaillé a partir de maquette sur l'intégration des 5 rubriques.",
-            "techno": "HTML, CSS, JS",
-            "techno-desc": "HTML, CSS, JS, jQuery",
-            "links": "<a href=\"http://www.lacoste.com/fr/corporate-group.html\">Le groupe Lacoste</a> / <a href=\"http://www.lacoste.com/fr/corporate-people.html\">People</a> / <a href=\"http://www.lacoste.com/fr/corporate-products.html\">Produits</a> / <a href=\"http://www.lacoste.com/fr/corporate-planet.html\">Planète</a> / <a href=\"http://www.lacoste.com/fr/corporate-foundation.html\">La fondation Lacoste</a>"
+            "description": "Intégration de la page de présentation du club Lacoste.",
+            "techno": "HTML, CSS, jQuery",
+            "link": "http://www.lacoste.com/clublacoste.html",
+            "textLink": "Découvrir la page"
         },
         {
-            "title": "Lacoste Corporate",
+            "title": "Sauver François",
+            "duration": "1 semaine - juin 2016",
             "image": "lacoste-corporate.jpg",
             "thumbnail": "lacoste-corporate-thumb.jpg",
-            "description": "Intégration des rubriques corporates pour le sites Lacoste.com. Durant 1 mois, j'ai travaillé a partir de maquette sur l'intégration des 5 rubriques.",
-            "techno": "HTML, CSS, JS",
-            "techno-desc": "HTML, CSS, JS, jQuery",
-            "links": "<a href=\"http://www.lacoste.com/fr/corporate-group.html\">Le groupe Lacoste</a> / <a href=\"http://www.lacoste.com/fr/corporate-people.html\">People</a> / <a href=\"http://www.lacoste.com/fr/corporate-products.html\">Produits</a> / <a href=\"http://www.lacoste.com/fr/corporate-planet.html\">Planète</a> / <a href=\"http://www.lacoste.com/fr/corporate-foundation.html\">La fondation Lacoste</a>"
+            "description": "Projet NodeJS en groupe avec Tristan Blua et Eric Berlin. Création d'un jeu en temps réel où les joueurs doivent sauver Francois Hollande des manifestants.. <br>Jeu à 2 joueurs via micro et caméra : Le premier joueur peut diriger Hollande mais ne voit pas la carte. Il doit se faire guider par le deuxiéme joueur qui voit la carte dans son ensemble avec les ennemis et la sortie.",
+            "techno": "NodeJs, Express, Socket.IO, PhaserJS, Webrtc",
+            "link": "https://github.com/raphaChoquet/sauver-francois",
+            "textLink": "Voir le repository"
         },
         {
-            "title": "Lacoste Corporate",
+            "title": "Battle Track",
+            "duration": "1 semaine - juin 2015",
             "image": "lacoste-corporate.jpg",
             "thumbnail": "lacoste-corporate-thumb.jpg",
-            "description": "Intégration des rubriques corporates pour le sites Lacoste.com. Durant 1 mois, j'ai travaillé a partir de maquette sur l'intégration des 5 rubriques.",
-            "techno": "HTML, CSS, JS",
-            "techno-desc": "HTML, CSS, JS, jQuery",
-            "links": "<a href=\"http://www.lacoste.com/fr/corporate-group.html\">Le groupe Lacoste</a> / <a href=\"http://www.lacoste.com/fr/corporate-people.html\">People</a> / <a href=\"http://www.lacoste.com/fr/corporate-products.html\">Produits</a> / <a href=\"http://www.lacoste.com/fr/corporate-planet.html\">Planète</a> / <a href=\"http://www.lacoste.com/fr/corporate-foundation.html\">La fondation Lacoste</a>"
+            "description": "Projet Cordova en groupe avec Thibault Saint Germain. Création d'une application mobile de quizz musical. Deux joueurs s'affonte l'un aprés l'autre. Ils doivent trouver le titre de la musique dans un temps imparti.",
+            "techno": "NodeJs, Socket.IO, Cordova, Jquery Mobile",
+            "link": "https://github.com/raphaChoquet/BattleTrack",
+            "textLink": "Voir le repository"
         },
         {
-            "title": "Lacoste Corporate",
+            "title": "CS-DC’15",
+            "duration": "Juin 2015 à octobre 2015",
             "image": "lacoste-corporate.jpg",
             "thumbnail": "lacoste-corporate-thumb.jpg",
-            "description": "Intégration des rubriques corporates pour le sites Lacoste.com. Durant 1 mois, j'ai travaillé a partir de maquette sur l'intégration des 5 rubriques.",
-            "techno": "HTML, CSS, JS",
-            "techno-desc": "HTML, CSS, JS, jQuery",
-            "links": "<a href=\"http://www.lacoste.com/fr/corporate-group.html\">Le groupe Lacoste</a> / <a href=\"http://www.lacoste.com/fr/corporate-people.html\">People</a> / <a href=\"http://www.lacoste.com/fr/corporate-products.html\">Produits</a> / <a href=\"http://www.lacoste.com/fr/corporate-planet.html\">Planète</a> / <a href=\"http://www.lacoste.com/fr/corporate-foundation.html\">La fondation Lacoste</a>"
+            "description": "Travaille en Freelance. Rappatriement via une api de donnée JSON vers Wordpress. Recherche dans l'api des données à récupérer. Traitement de celle-ci (transformation de donnée, simplification des liasons, correction d'encodage, ...). Création de custom post avec liason de parenté. Injection des données dans les templates. Récupération des données depuis des Google sheets. Extraction des données wordpress vers un CSV.",
+            "techno": "Wordpress, PHP, MySQL",
+            "link": "http://cs-dc-15.org/",
+            "textLink": "Découvrir le site"
         }
-        
     ]
 }

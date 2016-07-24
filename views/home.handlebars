@@ -49,41 +49,25 @@
     <section id="projects">
         <div class="container">
             <h2 class="text-center title-section"><span class="title-section-bg">Projets</span></h2>
-            <ul class="cards-container row">
+            <ul class="cards-container">
                 {{#each projects}}
-                <li class="col-md-4 card-container">
-                    <a class="card card--hidden u-delay-{{math @index "%" 3}}" href="#modal-0" >
+                <li class="card u-transform3d">
+                    <a class="card-inner card--hidden u-delay-{{math @index '%' 3}}"
+                        href="{{link}}"
+                        data-link="{{textLink}}"
+                        data-largesrc="/img/{{image}}"
+                        data-title="{{{title}}}"
+                        data-description="{{{description}}}"
+                        data-duration="{{duration}}"
+                        data-techno="{{techno}}">
                         <img src="/img/{{thumbnail}}" alt="" width="360" height="300"/>
                         <div class="card-hover">
-                            <h3>{{title}}</h3>
+                            <h3>{{{title}}}</h3>
                             <p>
                                 {{techno}}
                             </p>
                         </div>
                     </a>
-                    <div class="modal fade" tabindex="-1" role="dialog" id="modal-0">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title">{{title}}</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="img-full">
-                                        <img src="/img/{{image}}" alt="" />
-                                    </div>
-                                    <div class="block-text">
-                                        <p>{{description}}</p>
-                                        <p class="small-text">
-                                            <strong>TECHNO :</strong> {{techno-desc}}
-                                            <br />
-                                            <strong>LIEN :</strong> {{{links}}}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </li>
                 {{/each}}
             </ul>
