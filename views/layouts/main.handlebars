@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Raphaël Choquet - Developpeur web Full-stack</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,700,500italic,700italic,900,900italic|Roboto+Condensed:400,300,300italic,400italic,700italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/css/main.css" media="screen" charset="utf-8">
+    <script src="/js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -20,12 +21,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Raphaël Choquet</a>
+                <a class="navbar-brand" href="#banner">Raphaël Choquet</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/about">A propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#about">A propos</a></li>
                 </ul>
             </div>
         </div>
@@ -35,14 +36,20 @@
         <section class="social-container">
             <div class="container">
                 <ul class="row social">
-                    <li class="col-md-4">
-                        <img src="/img/twitter.png" alt="Twitter" with="36" height="36"/>
+                    <li class="col-xs-4">
+                        <a class="twitter" target="_blank" href="https://twitter.com/raphael_choquet">
+                            <img src="/img/twitter.png" alt="Twitter" with="36" height="36"/>
+                        </a>
                     </li>
-                    <li class="col-md-4">
-                        <img src="/img/linkedin.png" alt="Linkedin" with="36" height="36"/>
+                    <li class="col-xs-4">
+                        <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/raphaelchoquet">
+                            <img src="/img/linkedin.png" alt="Linkedin" with="36" height="36"/>
+                        </a>
                     </li>
-                    <li class="col-md-4">
-                        <img src="/img/github.png" alt="Github" with="36" height="36"/>
+                    <li class="col-xs-4">
+                        <a class="github" target="_blank" href="https://github.com/raphaChoquet">
+                            <img src="/img/github.png" alt="Github" with="36" height="36"/>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -50,13 +57,13 @@
         <section class="footer-infos">
             <div class="container ">
                 <div class="row">
-                    <p class="col-md-4">
+                    <p class="col-sm-4">
                         Développeur web Full-Stack
                     </p>
-                    <p class="col-md-4">
+                    <p class="col-sm-4">
                         Vie dans la région Parisienne
                     </p>
-                    <p class="col-md-4">
+                    <p class="col-sm-4">
                         rapha.choquet@gmail.com
                     </p>
                 </div>
@@ -65,6 +72,7 @@
     </footer>
     <script src="/jquery/jquery.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/grid.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

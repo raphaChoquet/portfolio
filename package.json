@@ -13,6 +13,7 @@
   "author": "Raphaël Choquet",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "bootstrap": "^3.3.6",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
