@@ -33,6 +33,6 @@ app.get('/cv.pdf', function (req, res) {
     res.sendFile(__dirname + '/public/cv.pdf');
 })
 
-app.listen(80, function () {
+app.listen(8080, function () {
     console.log('express-handlebars example server listening on: 80');
 });
