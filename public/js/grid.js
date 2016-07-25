@@ -13,10 +13,10 @@ var $event = $.event,
 
 $special = $event.special.debouncedresize = {
     setup: function() {
-        $(this).on("resize", $special.handler);
+        $(this).on('resize', $special.handler);
     },
     teardown: function() {
-        $(this).off("resize", $special.handler);
+        $(this).off('resize', $special.handler);
     },
     handler: function(event, execAsap) {
         // Save the context
@@ -24,7 +24,7 @@ $special = $event.special.debouncedresize = {
             args = arguments,
             dispatch = function() {
                 // set correct event type
-                event.type = "debouncedresize";
+                event.type = 'debouncedresize';
                 $event.dispatch.apply(context, args);
             };
 
@@ -276,7 +276,7 @@ var Grid = (function() {
             if (typeof preview != 'undefined') {
                 preview.setHeights();
             }
-        })
+        });
     }
 
     function initItemsEvents($items) {
@@ -410,7 +410,7 @@ var Grid = (function() {
             this.$description.html(eldata.description);
             this.$href.attr('href', eldata.href);
             this.$href.html(eldata.textHref);
-            var technoHTML = "";
+            var technoHTML = '';
             for(var i = 0; i < eldata.techno.length; i++) {
                 technoHTML += '<span class="label" >' + eldata.techno[i] + '</span>';
             }
@@ -481,13 +481,9 @@ var Grid = (function() {
         },
         calcHeight: function() {
 
-            var heightPreview = winsize.height - this.$item.data('height') - marginExpanded,
-                itemHeight = winsize.height;
-
-            if (heightPreview < settings.minHeight) {
-                heightPreview = settings.minHeight;
-                itemHeight = settings.minHeight + this.$item.data('height') + marginExpanded;
-            }
+            var heightPreview = settings.minHeight;
+            var itemHeight = settings.minHeight + this.$item.data('height') + marginExpanded;
+        
 
             this.height = heightPreview;
             this.itemHeight = itemHeight;
@@ -534,7 +530,7 @@ var Grid = (function() {
         getEl: function() {
             return this.$previewEl;
         }
-    }
+    };
 
     return {
         init: init,
