@@ -584,7 +584,7 @@ GRID
 .block-text .o-text-link {
     transform-origin: center;
     transform: scale(1);
-    transition: all 0.3s ease-out, transform 0.3s ease-out 1.5s;
+    transition: all 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .block-text-hidden .o-text-link {
