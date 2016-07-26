@@ -21,7 +21,8 @@ a {
     color: #797979;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #292929;
 }
 
@@ -180,11 +181,13 @@ main {
     background: url(/img/github-hover.png) center no-repeat;
 }
 
-.social a:hover img {
+.social a:hover img,
+.social a:focus img {
     opacity: 0;
 }
 
-.social a:hover:after {
+.social a:hover:after,
+.social a:focus:after {
     opacity: 1;
 }
 
@@ -382,15 +385,18 @@ GRID
     transition: all 0.3s ease-out;
 }
 
-.card:not(.c-expanded) .card-inner:hover:before {
+.card:not(.c-expanded) .card-inner:hover:before,
+.card:not(.c-expanded) .card-inner:focus:before {
     background: rgba(0, 0, 0, .5);
 }
 
-.card:not(.c-expanded) .card-inner:hover .card-hover {
+.card:not(.c-expanded) .card-inner:hover .card-hover,
+.card:not(.c-expanded) .card-inner:focus .card-hover {
     opacity: 1;
 }
 
-.card:not(.c-expanded) .card-inner:hover h3:after {
+.card:not(.c-expanded) .card-inner:hover h3:after,
+.card:not(.c-expanded) .card-inner:focus h3:after {
     transform: scaleX(1);
 }
 
@@ -479,7 +485,7 @@ GRID
  */
 
 .o-flag-img > img {
-    max-height: 100%;
+    max-height: 400px;
   	max-width: 100%;
     border: 1px solid #e5e5e5;
 }
@@ -507,7 +513,8 @@ GRID
     transition: all .3s ease-out;
 }
 
-.o-text-link:hover {
+.o-text-link:hover,
+.o-text-link:focus {
 	border-color: #333;
     background: #333;
 	color: #fff;
@@ -561,8 +568,9 @@ GRID
     line-height: 20px;
     color: rgb(51, 51, 51);
 }
-
-
+.block-text p {
+    margin-bottom: 1.5em;
+}
 
 .block-text .label {
     transform-origin: center;
@@ -572,14 +580,25 @@ GRID
 .block-text-hidden .label {
     transform: scale(0);
 }
+
 .block-text .o-text-link {
     transform-origin: center;
     transform: scale(1);
-    transition: all 0.3s ease-out, transform 0.3s ease-out 1.4s;
+    transition: all 0.3s ease-out, transform 0.3s ease-out 1.5s;
 }
 
 .block-text-hidden .o-text-link {
     transform: scale(0);
+}
+
+.block-text .recommendation {
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.3s linear 1.4s;
+}
+
+.block-text-hidden .recommendation {
+    opacity: 0;
 }
 
 .u-delay-1 {
