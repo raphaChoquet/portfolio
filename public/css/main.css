@@ -387,7 +387,7 @@ GRID
 
 .card:not(.c-expanded) .card-inner:hover:before,
 .card:not(.c-expanded) .card-inner:focus:before {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .8);
 }
 
 .card:not(.c-expanded) .card-inner:hover .card-hover,
@@ -596,8 +596,25 @@ GRID
     opacity: 1;
     transition: opacity 0.3s linear 1.4s;
 }
+.block-text .contact {
+    margin-top: 15px;
+    transition: opacity 0.3s linear 1.5s;
+}
 
-.block-text-hidden .recommendation {
+.block-text .email {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    opacity: 1;
+
+}
+.block-text .phone {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.block-text-hidden .recommendation,
+.block-text-hidden .contact {
     opacity: 0;
 }
 

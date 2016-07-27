@@ -60,6 +60,26 @@
             "techno": "PHP, MySQL, HTML, CSS, jQuery, Google Maps",
             "link": "http://stores.lacoste.com",
             "textLink": "Découvrir le store locator"
+        },
+        {
+            "title": "Lacostagram",
+            "duration": "2013",
+            "image": "lacostagram.jpg",
+            "thumbnail": "lacostagram-thumb.jpg",
+            "description": "Mise en place d'un aggrégateur d'image et de vidéo de réseaux sociaux via des hashtags. Création d'une administration pour séléctionner parmis les images récupérées celles à afficher sur le front. Mise en place d'un front avec masonry. Création d'une strate Lacostagram pour le site Lacoste.com",
+            "techno": "PHP, MySQL, HTML, CSS, jQuery, Masonry",
+            "link": "http://lacostagr.am",
+            "textLink": "Découvrir le lacostagram"
+        },
+        {
+            "title": "Do Your Beauty",
+            "duration": "1 semaine en janvier 2016",
+            "image": "doyourbeauty.jpg",
+            "thumbnail": "doyourbeauty-thumb.jpg",
+            "description": "Création d'un formulaire de création de crême de beauté pour un projet d'école",
+            "techno": "HTML, CSS, AngularJS, Gulp",
+            "link": "http://lacostagr.am",
+            "textLink": "Découvrir le lacostagram"
         }
     ]
 }
