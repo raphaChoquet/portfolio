@@ -483,7 +483,20 @@ var Grid = (function() {
 
             var heightPreview = settings.minHeight;
             var itemHeight = settings.minHeight + this.$item.data('height') + marginExpanded;
-        
+
+            if ($(window).width() < 768) {
+                $('.c-expander').height('auto');
+                heightPreview = $('.c-expander').height();
+                if (heightPreview < 400) {
+                    heightPreview = 400;
+                }
+                $('.c-expander').height(0);
+                itemHeight = heightPreview + this.$item.data('height') + marginExpanded;
+            }
+
+
+
+
 
             this.height = heightPreview;
             this.itemHeight = itemHeight;

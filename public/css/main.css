@@ -475,6 +475,7 @@ GRID
 }
 
 .o-flag-img {
+    position: relative;
     width: 1px; /* [1] */
     padding-right: 40px;
     vertical-align: top;
