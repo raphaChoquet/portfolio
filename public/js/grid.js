@@ -376,6 +376,7 @@ var Grid = (function() {
             }
         },
         update: function($item) {
+            console.log('update');
 
             if ($item) {
                 this.$item = $item;
@@ -446,6 +447,7 @@ var Grid = (function() {
                 this.setHeights();
                 // scroll to position the preview in the right place
                 this.positionPreview();
+
             }, this), 25);
 
         },
@@ -480,23 +482,18 @@ var Grid = (function() {
 
         },
         calcHeight: function() {
-
             var heightPreview = settings.minHeight;
             var itemHeight = settings.minHeight + this.$item.data('height') + marginExpanded;
 
             if ($(window).width() < 768) {
-                $('.c-expander').height('auto');
-                heightPreview = $('.c-expander').height();
+                this.$previewEl.height('auto');
+                heightPreview = this.$previewEl.height();
                 if (heightPreview < 400) {
                     heightPreview = 400;
                 }
-                $('.c-expander').height(0);
+                this.$previewEl.height(0);
                 itemHeight = heightPreview + this.$item.data('height') + marginExpanded;
             }
-
-
-
-
 
             this.height = heightPreview;
             this.itemHeight = itemHeight;
