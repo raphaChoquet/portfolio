@@ -376,8 +376,6 @@ var Grid = (function() {
             }
         },
         update: function($item) {
-            console.log('update');
-
             if ($item) {
                 this.$item = $item;
             }
