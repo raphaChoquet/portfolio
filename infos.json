@@ -78,8 +78,8 @@
             "thumbnail": "doyourbeauty-thumb.jpg",
             "description": "Création d'un formulaire de création de crème de beauté pour un projet d'école.",
             "techno": "HTML, CSS, AngularJS, Gulp",
-            "link": "http://lacostagr.am",
-            "textLink": "Découvrir le lacostagram"
+            "link": "https://github.com/spongbox/doyourbeauty",
+            "textLink": "Voir le repository"
         }
     ]
 }
